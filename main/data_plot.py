@@ -42,3 +42,8 @@ def plot_pic():
     print(correlation)
     sns.heatmap(correlation, annot=True)
     plt.show()
+
+    # 成交量与单日交易总额两个变量之间的线性回归关系
+    sns.jointplot(df['volume'],df['amount'],kind='reg')
+    plt.show()
+    # 从这个图中，我们可以看到两个变量之间的关系大致符合一次函数，可以得出初步的结论：单日的成交量越大，总的交易额也会随之增加

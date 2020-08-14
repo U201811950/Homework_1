@@ -1,17 +1,17 @@
 import baostock as bs
 import pandas as pd
-
+import tushare as ts
 from matplotlib import pyplot as plt
 import seaborn as sns
 
 import data_plot
-import calculate
-import get_data_daily
+import index_calculation
+import data_processing
 import exploratory_analysis
 
 
 # 获取数据
-get_data_daily.get_data_d()
+data_processing.get_data_d()
 
 # 画图
 data_plot.plot_pic()
@@ -20,4 +20,4 @@ data_plot.plot_pic()
 exploratory_analysis.exploratory_analysis()
 
 # 计算指数
-calculate.calculate()
+index_calculation.calculate()
