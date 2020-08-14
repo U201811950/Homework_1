@@ -11,7 +11,7 @@ import exploratory_analysis
 
 
 # 获取数据
-data_processing.get_data_d()
+data_processing.get_data_d("sz.002739")
 
 # 画图
 data_plot.plot_pic()

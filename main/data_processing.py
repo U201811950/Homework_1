@@ -1,7 +1,7 @@
 import baostock as bs
 import pandas as pd
 
-def get_data_d():
+def get_data_d(stock_name):
     ####登录系统####
     lg = bs.login()
     #显示登录返回信息
@@ -10,8 +10,6 @@ def get_data_d():
 
     #####获取股票历史K线数据####
     #详细指标参数
-
-    stock_name = "sz.002739"
 
     rs = bs.query_history_k_data_plus(stock_name, "date,open,high,low,close,volume,amount,preclose,pctChg", start_date='2020-01-01', end_date='2020-08-10', frequency="d")
     print('query_history_k_data_plus respond error_code:'+rs.error_code)
