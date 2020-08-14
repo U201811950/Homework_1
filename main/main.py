@@ -7,6 +7,7 @@ import seaborn as sns
 import data_plot
 import calculate
 import get_data_daily
+import exploratory_analysis
 
 
 # 获取数据
@@ -14,6 +15,9 @@ get_data_daily.get_data_d()
 
 # 画图
 data_plot.plot_pic()
+
+# 比较
+exploratory_analysis.exploratory_analysis()
 
 # 计算指数
 calculate.calculate()
