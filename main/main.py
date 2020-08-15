@@ -21,3 +21,4 @@ exploratory_analysis.exploratory_analysis()
 
 # 计算指数
 index_calculation.calculate()
+index_calculation.get_macd_data()
